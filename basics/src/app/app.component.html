@@ -2,7 +2,7 @@
 
 <p>{{ title }}</p>
 
-<app-post [postImg]="imgURL"></app-post>
+<app-post [postImg]="imgURL" (imgSelected)="logImg($event)"></app-post>
 
 <p>{{ getTitle() }} ++</p>
 
