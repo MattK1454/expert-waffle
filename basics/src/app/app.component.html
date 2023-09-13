@@ -1,2 +1,9 @@
+<input (keyup)="changeImage($event)" [value]="imgURL">
+
 <p>{{ title }}</p>
+
+<app-post [postImg]="imgURL"></app-post>
+
 <p>{{ getTitle() }} ++</p>
+
+<app-test-app></app-test-app>
