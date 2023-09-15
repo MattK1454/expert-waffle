@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./test-app.component.css']
 })
 export class TestAppComponent {
-    name = "Matt";
+    name = "Matt"
+    imgURL_2 = "https://imagesvibe.com/wp-content/uploads/2023/05/Cute-Cat-Images14.jpg";
 
     getName() {
         return this.name;
