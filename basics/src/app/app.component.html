@@ -1,24 +1,17 @@
 <p *ngIf="blueClass">Button is blue.</p>
 
-<button
-  (click)="blueClass = !blueClass"
-  [ngClass]="{ blue: blueClass }"
-  [ngStyle]="{ 'font-size.px': fontSize }"
->
+<button (click)="blueClass = !blueClass" [ngClass]="{ blue: blueClass }" [ngStyle]="{ 'font-size.px': fontSize }">
   Change
 </button>
 
 <hr />
 
 <input (keyup)="changeImage($event)" [value]="imgURL" />
+<app-auth-module></app-auth-module>
 
 <p>{{ title | titlecase }}</p>
 
-<app-post
-  *ngFor="let image of images; let i = index"
-  [postImg]="image"
-  (imgSelected)="logImg($event)"
->
+<app-post *ngFor="let image of images; let i = index" [postImg]="image" (imgSelected)="logImg($event)">
   <p>Some Caption {{ i }}</p>
 </app-post>
 
